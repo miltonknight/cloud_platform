@@ -1,0 +1,412 @@
+@charset utf-8;
+/*! Copyright (c) 2015 Health 
+ *	Theme Name: Health 2015 
+ *	Theme URI: 
+ *	Description: healty cloud platform patient
+ *	Author: M.Knight
+ *	Version: 1.0
+ *	Tags: health, patient
+ *	Update by M.Knight 20150420
+ */
+
+/********** patien index **********/
+.p-consult {
+    background: url(../images/patient/p-consult-bg.jpg) no-repeat;
+}
+.p-consult span {
+    color: #fff;
+    font-size: 22px;
+    margin: 26px 0 0 160px;
+    width: 45px;
+    height: 50px;
+    display: inline-block;
+}
+.ph-latest {
+    background: url(../images/patient/l-news-bg.gif);
+    padding: 20px 25px;
+}
+.ph-latest ul {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+.ph-latest li {
+    margin-bottom: 5px;
+    clear: both;
+    overflow: hidden;
+    font-size: 16px;
+}
+.ph-latest span.title {
+    width: 152px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    margin-right: 10px;
+    background: #ccc;
+    color: #131313;
+    text-align: center;
+    float: left;
+}
+.ph-latest span.green {
+    color: #fff;
+    background: #02aa93;
+}
+.ph-latest li div {
+    display: inline-block;
+}
+.ph-latest li p {
+    margin: 0;
+}
+.p-yuema {
+    background: url(../images/patient/p-yuema.jpg) no-repeat;
+}
+.p-yuema span {
+    color: #27a8e9;
+    font-size: 22px;
+    margin: 23px 0 0 21px;
+    width: 84px;
+    height: 50px;
+    display: inline-block;
+    letter-spacing: 0.2em;
+    line-height: 40px;
+}
+.d-advice {
+    background-color: #d45602;
+    color: #fff1db;
+}
+.d-drug {
+    background-color: #999;
+    color: #f8f8f8;
+}
+.d-sport {
+    background-color: #653332;
+    color: #e0e2d7;
+}
+.d-food {
+    background-color: #156e42;
+    color: #e4fff4;
+}
+.p-cmbox {
+    margin-top: 20px;
+    font-size: 16px;
+}
+.ph-file {
+    background: url(../images/patient/p-files.jpg) no-repeat;
+}
+.ph-file span {
+    color: #fff;
+    font-size: 22px;
+    margin: 25px 0 0 116px;
+    width: 118px;
+    height: 43px;
+    display: inline-block;
+    text-align: center;
+    line-height: 42px;
+}
+
+/********** right side **********/
+.apmt {
+    background-image: url(../images/patient/exm.png);
+    background-color: #2e85c8;
+    background-position: 20px 40px;
+    background-repeat: no-repeat;
+}
+.apmt-box {
+    width: 154px;
+    height: 60px;
+    overflow: hidden;
+    float: left;
+    margin: 30px 0 0 69px;
+}
+.apmt-box ul {
+    margin: 0;
+    padding: 0;
+    width: 140px;
+}
+.apmt-box li {
+    display: block;
+    overflow: hidden;
+    width: 140px;
+    height: 60px;
+    font-size: 14px;
+}
+.apmt-box li a, .apmt-box li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.rl-man {
+    width: 119px;
+    height: 119px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+.rl-man p {
+    width: 119px;
+    height: 20px;
+    margin: 34px 0 0;
+}
+.rl-man span {
+    width: 119px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+}
+.rl-np img, .rl-pn img {
+    width: 119px;
+    height: 119px;
+    display: block;
+}
+.rl-pn img, .rl-np .rl-man {
+    float: left;
+}
+.rl-np img, .rl-pn .rl-man {
+    float: right;
+}
+.rl-bg-A {
+    background: #01abba; 
+}
+.rl-bg-B {
+    background: #ffaa3b; 
+}
+.rl-bg-C {
+    background: #cccccc; 
+}
+.rl-bg-D {
+    background: #4d4d4d; 
+}
+.p-msg {
+    background: #e6e6e6;
+    overflow: hidden;
+}
+.p-msg p {
+    padding: 10px 13px;
+}
+.h-title {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    background: url(../images/patient/e-dot2.gif) 10px 9px #0491a2 no-repeat;
+    text-align: right;
+    padding: 0 10px;
+    color: #fff;
+}
+.gray {background-color: #666;}
+.ph-latest .p-header-dot {
+    display: inline-block;
+    background: url(../images/patient/e-dot.gif) repeat-x;
+    width: 69%;
+    height: 20px;
+}
+.p-order {
+    display: block;
+    width: 238px;
+    height: 119px;
+    background: url(../images/patient/e-r-cross.gif) #d9f4ff center 30px no-repeat;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 75px;
+    color: #3fa7da;
+}
+.p-order:hover {
+    background: url(../images/patient/e-r-cross.gif) #ade7ff center 30px no-repeat;
+    color: #3fa7da;
+    text-decoration: none;
+    box-shadow: 0.5px 0.5px 10px #6F6F6F inset;
+}
+
+/********** food advice **********/
+.p-food-advice {
+    background: #156e42;
+    padding: 20px 25px;
+}
+.p-food-advice .header span,
+.p-sport .header span,
+.p-medecine .header span {
+    color: #fff;
+}
+.p-header-dot {
+    display: inline-block;
+    background: url(../images/patient/e-dot3.gif) repeat-x 0 4px;
+    width: 80%;
+    height: 20px;
+}
+.p-food-advice dl,
+.p-sport dl,
+.p-medecine dl {
+    margin: 20px 0 0;
+    color: #fff;
+}
+.p-food-advice dl dt, .p-food-advice dl dd,
+.p-sport dl dt, .p-sport dl dd,
+.p-monitor dl dt, .p-monitor dl dd,
+.p-medecine dl dt, .p-medecine dl dd {
+    display: inline-block;
+    float: left;
+}
+.p-food-advice dl dt,
+.p-sport dl dt,
+.p-monitor dl dt,
+.p-medecine dl dt {
+    width: 40px;
+}
+.p-food-advice dl dd,
+.p-sport dl dd,
+.p-monitor dl dd,
+.p-medecine dl dd{
+    font-size: 16px;
+    width: 624px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+.p-food-advice dl span {
+    color: #fff;
+    padding: 3px 8px;
+    background: #26d296;
+}
+.p-sport dl span {
+    color: #fff;
+    padding: 3px 8px;
+    background: #d49828;
+}
+.p-monitor dl span {
+    color: #fff;
+    padding: 3px 8px;
+    background: #00a6a6;
+}
+.p-medecine dl span {
+    color: #fff;
+    padding: 3px 8px;
+    background: #4c4c4c;
+}
+
+/********** sport **********/
+.p-sport {
+    background: #653332;
+    padding: 20px 25px;
+}
+.p-sport-plan {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.p-sport-plan img {
+    margin: 10px auto;
+}
+.p-sport-plan p {
+    font-size: 16px;
+}
+.p-sport-title {
+    width: 100%;
+    height: 40px;
+    background: #e6e6e6;
+    text-align: center;
+    float: left;
+}
+
+/********** monitor **********/
+.p-monitor {
+    background: #e7e7e7;
+    padding: 20px 25px;
+}
+.p-monitor .header span {
+    color: #161616;
+}
+.p-monitor dl {
+    margin: 20px 0 0;
+    color: #161616;
+}
+.p-monitor .p-header-dot {
+    background: url(../images/patient/e-dot4.gif) repeat-x 0 4px;
+}
+.tab-nav {
+    text-align: center;
+/*    padding: 20px;*/
+}
+.chart-box {
+    float: left;
+    width: 100%;
+    background: #fff;
+    min-height: 500px;
+}
+.row-box {
+    clear: both;
+    overflow: hidden;
+}
+.chart-time-sel, .chart-type-sel {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.chart-time-sel li, .chart-type-sel li {
+    text-align: center;
+    float: left;
+}
+.chart-time-sel li span {
+    display: block;
+    color: #fff;
+    background: #6599ff;
+    width: 238px;
+    font-weight: bold;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+}
+.chart-time-sel li a {
+    display: block;
+    width: 119px;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-left: none;
+    text-decoration: none;
+}
+.chart-time-sel li a:hover, 
+.chart-time-sel li a.cur {
+    background: #653332;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+}
+.chart-type-sel li a {
+    display: block;
+    width: 357px;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    color: #555;
+    border-right: 1px solid #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.chart-type-sel li a:hover, 
+.chart-type-sel li a.cur {
+    background: #eee;
+    color: #2d85c5;
+    text-decoration: none;
+}
+.d-chart {
+    padding: 20px;
+    text-align: center;
+}
+
+/********** medecine **********/
+.p-medecine {
+    background: #999;
+    padding: 20px 25px;
+}
+
+
+
+
+
+
+
+
+

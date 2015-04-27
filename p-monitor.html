@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="author" content="Knight">
+    <meta name="copyright" content="Copyright (c) 2015 healthy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>健康监测-首页</title>
+    <link href="css/packages/bootstrap-v3.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/patient.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+
+<div class="nav-bar">
+    <div class="sa">
+        <div class="logo"></div>
+        <ul class="nav-item">
+            <li><a href="#">首页</a></li>/
+            <li><a href="#">知识中心</a></li>/
+            <li><a href="#">健康讲堂</a></li>/
+            <li><a href="#">健康饮食</a></li>/
+            <li><a href="#">健康社区</a></li>
+        </ul>
+        <div class="login-box">
+            <a href="javascript:login()";>登陆</a><a href="#">注册</a>
+        </div>
+    </div>
+</div>
+
+<!-- side-menu -->
+<div class="side-menu">
+    <div class="menu-off">健康导航菜单</div>
+    <div class="menu-on">
+        <ul>
+            <li><a class="menu-A" href="javascript:void(0)">回到首页</a></li>
+            <li><a class="menu-B cur" href="javascript:void(0)">健康监测</a></li>
+            <li><a class="menu-C" href="javascript:void(0)">饮食调理</a></li>
+            <li><a class="menu-D" href="javascript:void(0)">运动健身</a></li>
+            <li><a class="menu-E" href="javascript:void(0)">健康咨询</a></li>
+            <li><a class="menu-F" href="javascript:void(0)">健康档案</a></li>
+            <li><a class="menu-G" href="javascript:void(0)">健康社区 </a></li>
+        </ul>
+    </div>
+    <a id="menu-switch" class="switch-on" href="javascript:void(0)"></a>
+</div>
+
+<div class="wrapper">
+    <div class="sa-two-one">
+        <!-- left -->
+        <div class="sa-left">
+            <!-- jianceqingkuang -->
+            <div class="blk-ext3 p-monitor">
+                <div class="header">
+                    <span>监测情况</span>
+                    <span class="p-header-dot"></span>
+                    <a href="#" class="more m-A"></a>
+                </div>
+                <dl>
+                    <dt><span>1</span></dt>
+                    <dd>每天监测三餐餐前餐后血糖，加测一次睡前血糖监测</dd>
+                    <dt><span>2</span></dt>
+                    <dd>每天早、晚监测血压情况，取每日血压平均值</dd>
+                    <dt><span>3</span></dt>
+                    <dd>每天早、中、晚情况，取每日血压平均值</dd>
+                    <dt><span>4</span></dt>
+                    <dd>每天早、中、晚监测前及晚餐后血糖，加测一次睡前血糖</dd>                    
+                </dl>
+            </div>
+            <!-- chart -->
+            <div class="chart-box">
+                <div class="row-box">
+                    <ul class="chart-time-sel">
+                        <li><span>时间段选择</span></li>
+                        <li><a href="javascript:void(0)" sid="t-1">最近一天</a></li>
+                        <li><a href="javascript:void(0)" sid="t-2">最近一周</a></li>
+                        <li><a class="cur" href="javascript:void(0)" sid="t-3">最近一月</a></li>
+                        <li><a href="javascript:void(0)" sid="t-4">最近三月</a></li>
+                    </ul>
+                </div>
+                <div class="row-box">
+                    <ul class="chart-type-sel">
+                        <li><a class="cur" href="javascript:void(0)" sid="type-1">血压</a></li>
+                        <li><a href="javascript:void(0)" sid="type-2">血糖</a></li>
+                    </ul>
+                </div>
+                
+                <!-- insert chart here -->
+                <div id="e-chart" class="d-chart">
+                    <img src="images/patient/t-chart.png" />
+                </div>
+                
+            </div>
+            
+        </div>
+        <!-- right -->
+        <div class="sa-right">
+            <div class="blk-half">
+                <a class="p-order" href="javascript:void(0)">立即预约就诊</a>
+            </div>
+            
+            <div class="blk-half apmt">
+                <div class="apmt-box">
+                    <ul>
+                        <li><a href="#">您的耳鼻喉科预约已经生效，请于10月10日入院检查</a></li>
+                        <li><a href="#">您的胸科预约已经生效，请于10月12日入院检查</a></li>
+                        <li><a href="#">您的眼科预约已经生效，请于10月15日入院检查</a></li>
+                        <li><a href="#">您的外科预约已经生效，请于10月18日入院检查</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="blk-half rl-pn">
+                <img src="images/patient/temp/t-1.gif" />
+                <div class="rl-man rl-bg-A"><p>主治医师</p><span>王鑫</span></div>
+            </div>
+            
+            <div class="blk-half rl-np">
+                <img src="images/patient/temp/t-2.gif" />
+                <div class="rl-man rl-bg-B"><p>亲属</p><span>王凤娟</span></div>
+            </div>
+            
+            <div class="blk-half rl-pn">
+                <img src="images/patient/temp/t-3.gif" />
+                <div class="rl-man rl-bg-C"><p>亲属</p><span>张佳乐</span></div>
+            </div>
+            
+            <div class="blk-half rl-np">
+                <img src="images/patient/temp/t-4.gif" />
+                <div class="rl-man rl-bg-D"><p>朋友</p><span>陈建国</span></div>
+            </div>
+        </div>
+    </div>
+</div> 
+    
+<!-- footer -->
+<div class="footer">
+    <div class="sa">
+        <p>网站标示类信息</p>
+    </div>
+</div>
+
+<script type="text/javascript">
+// #side-menu# can be changed to be a global function
+$("#menu-switch").toggle(
+    // close the whole menu
+    function(){
+        $("#menu-switch").removeClass("switch-on");
+        $(".menu-on").animate({height:"0"},1000,function(){
+            $(".menu-off").show(500,function(){
+                $("#menu-switch").addClass("switch-off");
+            });
+        });
+    },
+    // open the whole menu
+    function(){
+        $(".menu-off").hide();
+        $(".menu-on").animate({height:"644px"},1000);
+        $("#menu-switch").removeClass("switch-off");
+        $("#menu-switch").addClass("switch-on");
+    }
+);
+</script>
+
+</body>
+
+</html>

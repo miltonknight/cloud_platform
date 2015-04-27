@@ -1,0 +1,250 @@
+@charset utf-8;
+/*! Copyright (c) 2015 Health 
+ *	Theme Name: Health 2015 
+ *	Theme URI: 
+ *	Description: healty cloud platform common
+ *	Author: M.Knight
+ *	Version: 1.0
+ *	Tags: health, common
+ *	Update by M.Knight 20150415
+ */
+
+/********** global **********/
+body {
+    background-image: url(../images/blue-bg.gif);
+    background-repeat: repeat-x;
+}
+.clearall { zoom: 1; }
+.clearall:after {
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden;
+}
+.clear {height:0; clear:both; overflow:hidden;}
+.fleft {float:left;}
+.fright {float:right;}
+
+/* selected font color */
+
+::-moz-selection {
+    background:#6C6;
+    color:#fff;
+}
+::selection {
+	background:#6C6;
+	color:#fff;
+}
+.list li {
+/*	width: 95%;
+	padding-left: 15px;*/
+	width: 100%;
+	text-indent :0.75em;
+	background: url(../images/dot.gif) 0 13px no-repeat;	
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	overflow: hidden;
+}
+/********** three styles for more-button **********/
+.more {
+    display: inline-block;
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/more.gif);
+    background-repeat: no-repeat;
+}
+.m-A {
+    background-position: 0 0;
+}
+.m-B {
+    background-position: 0 -20px;
+}
+.m-C {
+    background-position: 0 -40px;
+}
+.p20 {padding: 20px;}
+.ph20 {padding: 0 20px;}
+
+/********** nav **********/
+.nav-bar { 
+    width: 100%; 
+    min-width: 950px;
+    height: 72px; 
+    background: #333; 
+    border-bottom: 2px solid #fff;
+    margin-bottom: 80px;
+}
+.logo {
+    display: inline-block; 
+    width: 164px;
+    height: 70px; 
+    background: url(../images/logo.gif); 
+    float: left;
+}
+.nav-item {
+    display: inline-block; 
+    width: 500px; 
+    float: left; 
+    color:#fff; 
+    margin: 25px 0 0 80px;
+}
+.nav-item li {
+    display: inline; 
+    margin: 25px 10px; 
+    list-style: none;
+}
+.nav-item li a {color:#fff; font-size: 16px;}
+
+/********** login **********/
+.login-box {
+    display: inline-block; 
+    width: 121px; 
+    height: 29px; 
+    line-height: 30px; 
+    float: right; 
+    margin: 20px 0 0; 
+    background: url(../images/i-login-bg.gif);
+}
+.login-box a {color: #333; margin: 0 16px;}
+
+/********** side-menu **********/
+.side-menu {
+    width: 74px;
+    height: 344px;
+    position: absolute;
+    left: 50%;
+    top: 152px;
+    margin-left: -559px;
+}
+.menu-off {
+    width: 44px;
+    height: 156px;
+    background: url(../images/side-menu-bg.gif);
+    font-size: 16px;
+    text-align: center;
+    padding: 13px 10px;
+    color: #fff;
+    margin-left: 30px;
+    display: none;
+}
+.menu-on {
+    width: 74px;
+    height: 644px;
+/*    height: 0;*/
+    overflow: hidden;
+}
+.menu-on ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-on li a {
+    display: block;
+    width: 74px;
+    height: 87px;
+    background-image: url(../images/side-menu.png);
+    background-color: #4c4d51;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 60px;
+}
+.menu-on li a:hover, .menu-on a.cur {
+    background-color: #00ccfe;
+    text-decoration: none;
+}
+.menu-A {
+    background-position: 0 15px;
+}
+.menu-B {
+    background-position: -74px 15px;
+}
+.menu-C {
+    background-position: -148px 15px;
+}
+.menu-D {
+    background-position: -222px 15px;
+}
+.menu-E {
+    background-position: -296px 15px;
+}
+.menu-F {
+    background-position: -370px 15px;
+}
+.menu-G {
+    background-position: -444px 15px;
+}
+.switch-off {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url(../images/side-menu-arr.gif);
+    margin-left: 30px;
+}
+.switch-on {
+    display: block;
+    width: 74px;
+    height: 29px;
+    background: url(../images/side-menu-arr2.gif);
+}
+
+/********** footer **********/
+.footer {
+    width: 100%;
+    height: 100px;
+    background: #666;
+}
+.footer p {
+    text-align: center;
+    color: #fff;
+    margin: 40px auto;
+}
+
+/********** pic layout **********/
+a.pic-basic {
+    display: block;
+    width: 238px;
+    height: 238px;
+    text-decoration: none;
+    position: relative;
+}
+a.pic-basic:hover {
+    text-decoration: none;
+}
+a.pic-basic img {
+    width: 238px;
+    height: 238px;
+}
+a.pic-basic span {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
