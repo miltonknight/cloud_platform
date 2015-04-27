@@ -209,7 +209,7 @@
     color: #3fa7da;
 }
 .p-order:hover {
-    background: url(../images/patient/e-r-cross.gif) #ade7ff center 30px no-repeat;
+    background: url(../images/patient/e-r-cross.gif) #d9f4ff center 30px no-repeat;
     color: #3fa7da;
     text-decoration: none;
     box-shadow: 0.5px 0.5px 10px #6F6F6F inset;
@@ -401,9 +401,155 @@
     background: #999;
     padding: 20px 25px;
 }
-
-
-
+.p-talk-box {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.quick-ask {
+    width: 100%;
+    padding: 10px 15px;
+    background: #97cdcd;
+    float: left;
+}
+.quick-ask input {
+    width: 568px;
+    height: 32px;
+    padding: 5px 15px;
+    float: left;
+    margin-right: 15px;
+    line-height: 22px;
+}
+.quick-ask a.qa-btn {
+    display: block;
+    width: 100px;
+    height: 32px;
+    line-height: 22px;
+    padding: 5px 15px;
+    float: left;
+    color: #fff;
+    background: #66999a;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.quick-ask a.qa-btn:hover {
+    background: #436464;
+    text-decoration: none;
+}
+.p-tbox-left {
+    width: 119px;
+    min-height: 119px;
+    float: left;
+}
+.p-tbox-right {
+    width: 595px;
+    min-height: 119px;
+    float: left;
+}
+.talk-all {
+    background: #ffaa3b;
+    color: #fff;
+    font-size: 24px;
+    padding: 21px 20px;
+    text-align: center;
+}
+.talk-all .badge {
+    padding: 3px 15px;
+    font-size: 30px;
+    background: #ff7e78;
+}
+.talk-unread {
+    background: #663200;
+    color: #fff;
+    font-size: 24px;
+    padding: 21px 20px;
+    text-align: center;
+}
+.talk-unread .badge {
+    padding: 3px 15px;
+    font-size: 30px;
+    background: #f40500;
+}
+.p-tbox-blk {
+    width: 100%;
+    padding: 15px 15px 5px;
+    background: #e6e6e6;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+.p-tbox-rpl {
+    padding-left: 100px;
+}
+.p-tbox-blk .p-tbox-head {
+    width: 60px;
+    height: 85px;
+    text-align: center;
+    float: left;
+    margin: 0 20px 0 0;
+    color: #333;
+    text-decoration: none;
+}
+.p-tbox-head:hover {
+    color: #333;
+    text-decoration: none;
+}
+.p-tbox-head img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+.p-tbox-cont {
+    min-height: 79px;
+}
+.p-tbox-blk p {
+    text-align: right;
+    margin-bottom: 0;
+}
+.p-tbox-blk p a {
+    color: #ff3333;
+    margin-right: 20px;
+}
+.more-talk {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #ccc;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 5px;
+}
+.more-talk:hover {
+    background: #a2a2a2;
+    color: #fff;
+}
+.reply-box {
+    background: #99cccd;
+    height: 135px;
+}
+.reply-box textarea {
+    float: right;
+    margin-bottom: 10px;
+}
+.reply-box a.qa-btn {
+    display: block;
+    width: 100px;
+    height: 32px;
+    line-height: 22px;
+    padding: 5px 15px;
+    float: right;
+    color: #fff;
+    background: #66999a;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.reply-box a.qa-btn:hover {
+    background: #436464;
+    text-decoration: none;
+}
 
 
 
