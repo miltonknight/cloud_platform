@@ -10,11 +10,12 @@
     <meta http-equiv="x-rim-auto-match" content="none">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>健康咨询-首页</title>
+    <title>健康档案-首页</title>
     <link href="css/packages/bootstrap-v3.css" rel="stylesheet" type="text/css">
     <link href="css/layout.css" rel="stylesheet" type="text/css">
     <link href="css/common.css" rel="stylesheet" type="text/css">
     <link href="css/patient.css" rel="stylesheet" type="text/css">
+    <link href="css/doctor.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery/jquery-1.8.3.min.js"></script>
 </head>
 
@@ -39,15 +40,15 @@
 <!-- side-menu -->
 <div class="side-menu">
     <div class="menu-off">健康导航菜单</div>
-    <div class="menu-on">
+    <div class="menu-on menu-on2">
         <ul>
-            <li><a class="menu-A" href="javascript:void(0)">回到首页</a></li>
-            <li><a class="menu-B" href="javascript:void(0)">健康监测</a></li>
-            <li><a class="menu-C" href="javascript:void(0)">饮食调理</a></li>
+            <li><a class="menu-A" href="javascript:void(0)">我的首页</a></li>
+            <li><a class="menu-B" href="javascript:void(0)">日常监测</a></li>
+            <li><a class="menu-C" href="javascript:void(0)">干预方案</a></li>
             <li><a class="menu-D" href="javascript:void(0)">运动健身</a></li>
-            <li><a class="menu-E cur" href="javascript:void(0)">健康咨询</a></li>
-            <li><a class="menu-F" href="javascript:void(0)">健康档案</a></li>
-            <li><a class="menu-G" href="javascript:void(0)">健康社区 </a></li>
+            <li><a class="menu-E" href="javascript:void(0)">健康档案</a></li>
+            <li><a class="menu-F cur" href="javascript:void(0)">健康咨询</a></li>
+            <li><a class="menu-G" href="javascript:void(0)">预约就诊 </a></li>
         </ul>
     </div>
     <a id="menu-switch" class="switch-on" href="javascript:void(0)"></a>
@@ -57,30 +58,28 @@
     <div class="sa-two-one">
         <!-- left -->
         <div class="sa-left">
-            <!-- jianceqingkuang -->
-            <div class="blk-ext3 p-medecine">
-                <div class="header">
-                    <span>用药建议</span>
-                    <span class="p-header-dot"></span>
-                    <a href="#" class="more m-A"></a>
+            <!-- patient info -->
+<!--
+            <div class="blk-ext3-mini">
+                <div class="blk-mini"><img src="images/patient/temp/t-1.gif" /></div>
+                <div class="blk-ext2-mini d-pinfo">
+                    <span class="d-pinfo-name">周国强</span>
+                    <dl>
+                        <dd>基本信息：男40岁</dd>
+                        <dd>病史简述：6年糖尿病史，冠心病3年</dd>
+                        <dd>联系方式：13987654321</dd>
+                        <dd>居住地址：碧桂园银河城</dd>
+                    </dl>
                 </div>
-                <dl>
-                    <dt><span>1</span></dt>
-                    <dd>不建议做剧烈运动，可以尝试非对抗性运动，例如溜达，跳绳，慢跑，游泳等</dd>
-                    <dt><span>2</span></dt>
-                    <dd>最好的运动是游泳，建议一周做1~2次，可以有效的加强背部肌肉，增强机体血液循环能力。</dd>
-                    <dt><span>3</span></dt>
-                    <dd>最好的运动是游泳，建议一周做1~2次，可以有效的加强背部肌肉，增强机体血液循环能力。</dd>
-                </dl>
+                
             </div>
+-->
             <!-- talk -->
             <div class="p-talk-box">
-                <div class="quick-ask">
-                    <input type="text" value="" placeholder="请在此输入你的问题" />
-                    <a class="qa-btn" href="javascript:void(0)">提问</a>
-                </div>
                 <div class="p-tbox-left">
-                    <div class="blk-mini"><img src="images/patient/temp/t-1.gif" /></div>
+                    <div class="blk-mini">
+                        <img src="images/patient/temp/t-1.gif" />
+                    </div>
                     <div class="blk-mini talk-all">
                         <p><span class="badge">4</span></p>
                         <p>全部</p>
@@ -89,6 +88,9 @@
                         <p><span class="badge">4</span></p>
                         <p>未读</p>
                     </div>
+                    <div class="blk-mini box-more purple">
+                        <a href="javascript:void(0)"><img src="images/patient/back.png" /><p>其他用户</p></a>
+                </div>
                 </div>
                 <div class="p-tbox-right">
                     <!-- 留言 -->
@@ -97,29 +99,10 @@
                         <div class="p-tbox-cont">药药~今天不错，挺风和日丽的，可以适当活动</div>
                         <p><a href="javascript:void(0)">回复</a>2015-04-27 10:10</p>
                     </div>
-                    <!-- 回复 -->
-                    <div class="p-tbox-blk p-tbox-rpl">
-                        <a class="p-tbox-head"><img src="images/patient/temp/t-1.gif" />王医生</a>
-                        <div class="p-tbox-cont">药药~今天不错，挺风和日丽的，可以适当活动</div>
-                        <p><a href="javascript:void(0)">回复</a>2015-04-27 10:10</p>
-                    </div>
-                    <div class="p-tbox-blk p-tbox-rpl">
-                        <a class="p-tbox-head"><img src="images/patient/temp/t-1.gif" />王医生</a>
-                        <div class="p-tbox-cont">药药~今天不错，挺风和日丽的，可以适当活动</div>
-                        <p><a href="javascript:void(0)">回复</a>2015-04-27 10:10</p>
-                    </div>
-                    
                     <!-- 留言框子 -->
-                    <div class="p-tbox-blk reply-box">
+                    <div class="p-tbox-blk reply-box2">
                         <textarea rows="3"></textarea>
                         <a class="qa-btn" href="javascript:void(0)">回复</a>
-                    </div>
-                    
-                    <!-- 留言 -->
-                    <div class="p-tbox-blk">
-                        <a class="p-tbox-head"><img src="images/patient/temp/t-1.gif" />王医生</a>
-                        <div class="p-tbox-cont">药药~今天不错，挺风和日丽的，可以适当活动</div>
-                        <p><a href="javascript:void(0)">回复</a>2015-04-27 10:10</p>
                     </div>
                     <!-- 回复 -->
                     <div class="p-tbox-blk p-tbox-rpl">
@@ -137,49 +120,28 @@
                     <a class="more-talk" href="javascript:void(0)">
                         <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                     </a>
-                    
                 </div>
                 
             </div>
-   
         </div>
         <!-- right -->
         <div class="sa-right">
-            <div class="blk-half">
-                <a class="p-order" href="javascript:void(0)">立即预约就诊</a>
+            <div class="blk-half a-ddjc">
+                <img src="images/patient/d-jcbg.jpg" />
+                <a href="#">动态监测数据</a>
             </div>
             
-            <div class="blk-half apmt">
-                <div class="apmt-box">
-                    <ul>
-                        <li><a href="#">您的耳鼻喉科预约已经生效，请于10月10日入院检查</a></li>
-                        <li><a href="#">您的胸科预约已经生效，请于10月12日入院检查</a></li>
-                        <li><a href="#">您的眼科预约已经生效，请于10月15日入院检查</a></li>
-                        <li><a href="#">您的外科预约已经生效，请于10月18日入院检查</a></li>
-                    </ul>
-                </div>
+            <div class="blk-half a-yyjz">
+                <img src="images/patient/d-yybg.jpg" />
+                <a href="#">预约就诊申请</a>
             </div>
             
-            <div class="blk-half rl-pn">
-                <img src="images/patient/temp/t-1.gif" />
-                <div class="rl-man rl-bg-A"><p>主治医师</p><span>王鑫</span></div>
-            </div>
-            
-            <div class="blk-half rl-np">
-                <img src="images/patient/temp/t-2.gif" />
-                <div class="rl-man rl-bg-B"><p>亲属</p><span>王凤娟</span></div>
-            </div>
-            
-            <div class="blk-half rl-pn">
-                <img src="images/patient/temp/t-3.gif" />
-                <div class="rl-man rl-bg-C"><p>亲属</p><span>张佳乐</span></div>
-            </div>
-            
-            <div class="blk-half rl-np">
-                <img src="images/patient/temp/t-4.gif" />
-                <div class="rl-man rl-bg-D"><p>朋友</p><span>陈建国</span></div>
+            <div class="blk-half a-llxx">
+                <img src="images/patient/d-lybg.jpg" />
+                <a href="#">留言信息</a>
             </div>
         </div>
+        
     </div>
 </div> 
     
@@ -210,6 +172,18 @@ $("#menu-switch").toggle(
         $("#menu-switch").addClass("switch-on");
     }
 );
+    
+// for files tab
+$(function(){
+	$('.taber .head a').hover(function(){
+		var _num = $(this).attr('lang').substring(0,2);
+		$("#"+_num+" .body").hide();
+		$('.taber #'+$(this).attr('lang')).show();
+
+		$("#"+_num+" .head a").removeClass('selected');
+		$(this).addClass('selected');
+	})
+});
 </script>
 
 </body>

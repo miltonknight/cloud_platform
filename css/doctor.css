@@ -1,0 +1,355 @@
+@charset utf-8;
+/*! Copyright (c) 2015 Health 
+ *	Theme Name: Health 2015 
+ *	Theme URI: 
+ *	Description: healty cloud platform doctor
+ *	Author: M.Knight
+ *	Version: 1.0
+ *	Tags: health, doctor
+ *	Update by M.Knight 20150429
+ */
+
+/********** doctor index **********/
+.a-ddjc, .a-yyjz, .a-llxx {
+    position: relative;
+    font-size: 20px;
+}
+.a-ddjc a, .a-yyjz a, .a-llxx a {
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+}
+.a-ddjc a:hover, .a-yyjz a:hover, .a-llxx a:hover {
+    text-decoration: none;
+}
+.a-ddjc a {
+    left: 98px;
+    top: 46px;
+}
+.a-yyjz a {
+    left: 20px;
+    top: 44px;
+}
+.a-llxx a {
+    left: 120px;
+    top: 45px;
+}
+.box-more {
+    text-align: center;
+    background: #33cc33;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 17px;
+}
+.box-more:hover {
+    background: #1eaf1e;
+}
+.box-more a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+.box-more a:hover {
+    text-decoration: none;
+}
+.box-more img {
+    margin-bottom: 10px;
+}
+.purple {
+    background: #254ec4;
+}
+.red {
+    background: #ff0000;
+}
+.d-pinfo {
+    background: #e6e6e6;
+    padding: 19px;
+}
+.d-pinfo-name {
+    width: 80px;
+    height: 80px;
+    display: block;
+    background: #996533;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 40px;
+    font-size: 18px;
+    float: left;
+    margin-right: 20px;
+}
+.d-pinfo2 {
+    background: #e6e6e6;
+}
+.d-pinfo2 .d-pinfo-name {
+    margin: 20px 20px;
+}
+.d-pinfo-time {
+    float: left;
+    width: 356px;
+    height: 119px;
+    color: #fff;
+    text-align: center;
+    line-height: 59px;
+    font-size: 18px;
+}
+.d-pinfo-time .info-title {
+    width: 356px;
+    height: 59px;
+    background: #33cc33;
+}
+.d-pinfo-time .info-time {
+    width: 356px;
+    height: 60px;
+    background: #339967;
+}
+
+/********** plan **********/
+.plan-box {
+    float: left;
+    width: 100%;
+    background: #fff;
+    min-height: 476px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.plan-box-left {
+    float: left;
+    width: 119px;
+}
+.plan-box-right {
+    float: left;
+    width: 594px;
+}
+.plan-box-left a {
+    display: block;
+    width: 119px;
+    height: 119px;
+    color: #fff;
+    padding: 26px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+}
+.plan-box-left a:nth-child(1) {
+    background: #193f8a;
+}
+.plan-box-left a:nth-child(2) {
+    background: #999;
+}
+.plan-box-left a:nth-child(3) {
+    background: #7f5b5b;
+}
+.plan-box-left a:nth-child(4) {
+    background: #99cc33;
+}
+.plan-box-left a:hover {
+    color: #333;
+    background: #fff;
+    text-decoration: none;
+}
+.plan-box-right {
+    padding: 30px;
+}
+.plan-box-right .plan-cont {
+    font-size: 16px;
+    height: 346px;
+    margin-bottom: 20px;
+}
+.plan-cont textarea {
+    width: 100%;
+    height: 100%;
+    padding: 7px 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.plan-box-right .plan-btn {
+    width: 100%;
+    height: 50px;
+}
+.plan-btn a {
+    width: 190px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+.plan-btn a:nth-child(1) {
+    background: #0560a6;
+    float: left;
+}
+.plan-btn a:nth-child(2) {
+    background: #999999;
+    float: right;
+}
+
+.reply-box2 {
+    background: #99cccd;
+    height: 121px;
+    padding-left: 82px;
+}
+.reply-box2 a.qa-btn {
+    display: block;
+    width: 80px;
+    height: 25px;
+    line-height: 22px;
+    padding: 2px 5px;
+    float: right;
+    color: #fff;
+    background: #66999a;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+/********** **********/
+.unoperated {
+    background: #ffaa3b;
+    color: #fff;
+    font-size: 24px;
+    padding: 21px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.unoperated:hover {
+    background: #eb9523;
+}
+.unoperated .badge {
+    padding: 3px 15px;
+    font-size: 30px;
+    background: #ff0000;
+}
+.operated {
+    background: #2e85c8;
+    color: #fff;
+    font-size: 24px;
+    padding: 21px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.operated:hover {
+    background: #156fb4;
+}
+.operated .badge {
+    padding: 3px 15px;
+    font-size: 30px;
+    background: #ff0000;
+}
+.d-apinfo-box {
+    float: left;
+    width: 100%;
+    height: 200px;
+    background: #e6e6e6;
+}
+.d-apinfo-box ul {
+    padding: 0;
+}
+.d-apinfo-box li {
+    width: 100%;
+    padding: 0 40px;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    font-size: 16px;
+}
+.d-apinfo-box li:nth-child(odd) {
+    background: #ccc;
+}
+.d-apmt-time {
+    width: 100%;
+    height: 50px;
+    background: #00b3de;
+}
+.d-apmt-time span {
+    background: #009ec5;
+    float: left;
+    display: inline-block;
+    padding: 0 60px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+}
+.d-apmt-time input {
+    background: #fff;
+    height: 30px;
+    width: 200px;
+    padding: 5px 10px;
+    float: left;
+    margin: 10px 0 0 24px;
+    border: none;
+    text-align: center;
+}
+.d-apmt-time a {
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: right;
+    background: #336799;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.d-apmt-time a:hover {
+    background: #2a537b;
+}
+.d-apmt-time a.del {
+    background: #4982b9;
+}
+.d-apmt-time a.del:hover {
+    background: #2363a0;
+}
+.d-apmt-title {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background: #336799;
+}
+ul.apt-box {
+    display: block;
+    width: 100%;
+    height: 250px;
+    list-style: none;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+ul.apt-box li {
+    width: 33.333333%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid #a8a8a8;
+    font-size: 16px;
+}
+ul.apt-box li:nth-child(3n+1) {
+    background: #999;
+}
+ul.apt-box li:nth-child(3n+2) {
+    background: #b3b3b3;
+}
+ul.apt-box li:nth-child(3n+3) {
+    background: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

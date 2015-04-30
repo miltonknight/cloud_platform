@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="author" content="Knight">
+    <meta name="copyright" content="Copyright (c) 2015 healthy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>预约就诊-患者信息</title>
+    <link href="css/packages/bootstrap-v3.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/patient.css" rel="stylesheet" type="text/css">
+    <link href="css/doctor.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+
+<div class="nav-bar">
+    <div class="sa">
+        <div class="logo"></div>
+        <ul class="nav-item">
+            <li><a href="#">首页</a></li>/
+            <li><a href="#">知识中心</a></li>/
+            <li><a href="#">健康讲堂</a></li>/
+            <li><a href="#">健康饮食</a></li>/
+            <li><a href="#">健康社区</a></li>
+        </ul>
+        <div class="login-box">
+            <a href="javascript:login()";>登陆</a><a href="#">注册</a>
+        </div>
+    </div>
+</div>
+
+<!-- side-menu -->
+<div class="side-menu">
+    <div class="menu-off">健康导航菜单</div>
+    <div class="menu-on menu-on2">
+        <ul>
+            <li><a class="menu-A" href="javascript:void(0)">我的首页</a></li>
+            <li><a class="menu-B" href="javascript:void(0)">日常监测</a></li>
+            <li><a class="menu-C" href="javascript:void(0)">干预方案</a></li>
+            <li><a class="menu-D" href="javascript:void(0)">运动健身</a></li>
+            <li><a class="menu-E" href="javascript:void(0)">健康档案</a></li>
+            <li><a class="menu-F" href="javascript:void(0)">健康咨询</a></li>
+            <li><a class="menu-G cur" href="javascript:void(0)">预约就诊</a></li>
+        </ul>
+    </div>
+    <a id="menu-switch" class="switch-on" href="javascript:void(0)"></a>
+</div>
+
+<div class="wrapper">
+    <div class="sa-two-one">
+        <!-- left -->
+        <div class="sa-left">
+            <!-- jianceqingkuang -->
+            <div class="blk-ext3-mini">
+                <div class="blk-mini"><img src="images/patient/temp/t-1.gif" /></div>
+                <div class="blk-ext2-mini d-pinfo2">
+                    <span class="d-pinfo-name">周国强</span>
+                    <div class="d-pinfo-time">
+                        <div class="info-title">预约就诊时间</div>
+                        <div class="info-time">2015年05月19日</div>
+                    </div>
+                </div>
+                <div class="blk-mini box-more red">
+                    <a href="javascript:void(0)"><img src="images/patient/back.png" /><p>其他用户</p></a>
+                </div>
+            </div>
+            <!-- p-info -->
+            <div class="d-apinfo-box">
+                <ul>
+                    <li>基本信息：男1940年生人</li>
+                    <li>病史简述：6年糖尿病史，冠心病3年</li>
+                    <li>联系方式：13987654321</li>
+                    <li>居住地址：碧桂园银河城</li>
+                </ul>
+            </div>
+            <div class="blk-ext3">
+                <div class="d-apmt-time">
+                    <span>安排就诊时间</span>
+                    <input type="text" value="" />
+                    <a class="del" href="javascript:void(0)">取消</a>
+                    <a href="javascript:void(0)">确定</a>
+                </div>
+            </div>
+        </div>
+        <!-- right -->
+        <div class="sa-right">
+            <div class="blk-mini unoperated">
+                <p><span class="badge">4</span></p>
+                <p>未处理</p>
+            </div>
+            <div class="blk-mini operated">
+                <p><span class="badge">4</span></p>
+                <p>已处理</p>
+            </div>
+            <div class="blk-half a-ddjc">
+                <img src="images/patient/d-jcbg.jpg" />
+                <a href="#">动态监测数据</a>
+            </div>
+            
+            <div class="blk-half a-yyjz">
+                <img src="images/patient/d-yybg.jpg" />
+                <a href="#">预约就诊申请</a>
+            </div>
+            
+            <div class="blk-half a-llxx">
+                <img src="images/patient/d-lybg.jpg" />
+                <a href="#">留言信息</a>
+            </div>
+        </div>
+        
+    </div>
+</div> 
+    
+<!-- footer -->
+<div class="footer">
+    <div class="sa">
+        <p>网站标示类信息</p>
+    </div>
+</div>
+
+<script type="text/javascript">
+// #side-menu# can be changed to be a global function
+$("#menu-switch").toggle(
+    // close the whole menu
+    function(){
+        $("#menu-switch").removeClass("switch-on");
+        $(".menu-on").animate({height:"0"},1000,function(){
+            $(".menu-off").show(500,function(){
+                $("#menu-switch").addClass("switch-off");
+            });
+        });
+    },
+    // open the whole menu
+    function(){
+        $(".menu-off").hide();
+        $(".menu-on").animate({height:"644px"},1000);
+        $("#menu-switch").removeClass("switch-off");
+        $("#menu-switch").addClass("switch-on");
+    }
+);
+    
+// for files tab
+$(function(){
+	$('.taber .head a').hover(function(){
+		var _num = $(this).attr('lang').substring(0,2);
+		$("#"+_num+" .body").hide();
+		$('.taber #'+$(this).attr('lang')).show();
+
+		$("#"+_num+" .head a").removeClass('selected');
+		$(this).addClass('selected');
+	})
+});
+</script>
+
+</body>
+
+</html>

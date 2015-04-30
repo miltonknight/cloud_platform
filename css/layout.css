@@ -10,12 +10,17 @@
  */
 
 /********** standar layout **********/
-.sa {width: 950px; margin: 0 auto; clear: both; overflow: hidden;}
+.sa {width: 952px; margin: 0 auto; clear: both; overflow: hidden;}
 
-/* sa_02_01 470-470 */
+/* sa_02_01 714-238 */
 .sa-two-one {width: 952px; margin: 0 auto 20px; clear: both; overflow: hidden;}
 .sa-two-one .sa-left {width: 714px; float: left;}
 .sa-two-one .sa-right {width: 238px; float: left;}
+
+/* sa_02_02 119-833 */
+.sa-two-two {width: 952px; margin: 0 auto 20px; clear: both; overflow: hidden;}
+.sa-two-two .sa-left {width: 119px; float: left;}
+.sa-two-two .sa-right {width: 833px; float: left;}
 
 /* sa_03_01 205_490_245 */
 .sa-three-one {width: 952px; margin: 0 auto 20px; clear: both; overflow: hidden;}
@@ -34,6 +39,9 @@
 .blk-ext2 {width: 476px; height: 238px; display: inline-block; float: left;}
 .blk-half {width: 238px; height: 119px; display: inline-block; float: left;}
 .blk-mini {width: 119px; height: 119px; display: inline-block; float: left;}
+.blk-ext3-mini {width: 714px; height: 119px; display: inline-block; float: left;}
+.blk-ext2-mini {width: 476px; height: 119px; display: inline-block; float: left;}
+
 .blk-basic .header,
 .blk-ext2 .header,
 .blk-ext3 .header,

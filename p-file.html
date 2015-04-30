@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="author" content="Knight">
+    <meta name="copyright" content="Copyright (c) 2015 healthy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>健康档案V1 存在多标签bug</title>
+    <link href="css/packages/bootstrap-v3.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/patient.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+
+<div class="nav-bar">
+    <div class="sa">
+        <div class="logo"></div>
+        <ul class="nav-item">
+            <li><a href="#">首页</a></li>/
+            <li><a href="#">知识中心</a></li>/
+            <li><a href="#">健康讲堂</a></li>/
+            <li><a href="#">健康饮食</a></li>/
+            <li><a href="#">健康社区</a></li>
+        </ul>
+        <div class="login-box">
+            <a href="javascript:login()";>登陆</a><a href="#">注册</a>
+        </div>
+    </div>
+</div>
+
+<!-- side-menu -->
+<div class="side-menu">
+    <div class="menu-off">健康导航菜单</div>
+    <div class="menu-on">
+        <ul>
+            <li><a class="menu-A" href="javascript:void(0)">回到首页</a></li>
+            <li><a class="menu-B" href="javascript:void(0)">健康监测</a></li>
+            <li><a class="menu-C" href="javascript:void(0)">饮食调理</a></li>
+            <li><a class="menu-D" href="javascript:void(0)">运动健身</a></li>
+            <li><a class="menu-E" href="javascript:void(0)">健康咨询</a></li>
+            <li><a class="menu-F cur" href="javascript:void(0)">健康档案</a></li>
+            <li><a class="menu-G" href="javascript:void(0)">健康社区 </a></li>
+        </ul>
+    </div>
+    <a id="menu-switch" class="switch-on" href="javascript:void(0)"></a>
+</div>
+
+<div class="wrapper">
+    <div class="sa-two-two file-box">
+        <div class="taber" id="t1">
+            <div class="sa-left">
+                <div class="head">
+                    <div class="blk-mini nf-head">
+                        <img src="images/patient/temp/t-1.gif" />
+                    </div>
+                    <a href="javascript:void(0)" lang="t1_1" class="tab-forder selected"><div class="tab-box">个人信息</div></a>
+                    <a href="javascript:void(0)" lang="t1_2" class="tab-forder"><div class="tab-box">健康状况</div></a>
+                    <a href="javascript:void(0)" lang="t1_3" class="tab-forder"><div class="tab-box">生活方式</div></a>
+                    <a href="javascript:void(0)" lang="t1_4" class="tab-forder"><div class="tab-box">体检记录</div></a>
+                    <a href="javascript:void(0)" lang="t1_5" class="tab-forder"><div class="tab-box">既往病史医疗记录</div></a>
+                    <a href="javascript:void(0)" lang="t1_5" class="tab-forder"><div class="tab-box">家族与遗传病史</div></a>
+                    <a href="javascript:void(0)" lang="t1_5" class="tab-forder"><div class="tab-box">干预方案</div></a>
+                </div>
+            </div>
+            <div class="sa-right">
+                <div class="body" id="t1_1" style="display: block;">
+                    <ul class="data-box">
+                        <li><lable class="data-item">某项数据</lable><input type="text" value="某项参数" /></li>
+                        <li><lable class="data-item">某项数据</lable><input type="text" value="某项参数" /></li>
+                        <li><lable class="data-item">某项数据</lable><input type="text" value="某项参数" /></li>
+                        <li><lable class="data-item">某项数据</lable><input type="text" value="某项参数" /></li>
+                        <li><lable class="data-item">某项数据</lable><input type="text" value="某项参数" /></li>
+                        
+                    </ul>
+                </div>
+                <div class="body" id="t1_2" style="display: none">
+                2
+                </div>
+                <div class="body" id="t1_3" style="display: none">
+                    <div class="taber" id="t3">
+                        <div class="head">
+                            <a href="javascript:void(0)" lang="t3_1" class="tab-secondary">膳食</a>
+                            <a href="javascript:void(0)" lang="t3_2" class="tab-secondary selected">体力活动</a>
+                            <a href="javascript:void(0)" lang="t3_3" class="tab-secondary">饮酒</a>
+                            <a href="javascript:void(0)" lang="t3_4" class="tab-secondary">吸烟</a>
+                            <a href="javascript:void(0)" lang="t3_5" class="tab-secondary">睡眠</a>
+                            <a href="javascript:void(0)" lang="t3_6" class="tab-secondary">职业暴露</a>
+                        </div>
+                        <div class="body" id="t3_1" style="display: none;">21</div>
+                        <div class="body" id="t3_2" style="display: block;">22</div>
+                        <div class="body" id="t3_3" style="display: none;">23</div>
+                        <div class="body" id="t3_4" style="display: none;">24</div>
+                        <div class="body" id="t3_5" style="display: none;">25</div>
+                        <div class="body" id="t3_6" style="display: none;">26</div>
+                        
+                    </div>
+                </div>
+                <div class="body" id="t1_4" style="display: none">
+                4
+                </div>
+                <div class="body" id="t1_5" style="display: none">
+                    <p>根据您的检测结果，您应该多吃点XXXXXXXXXXXXXX少喝点XXXXXXXXXXXXX建议您XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                    <a class="check-his" href="javascript:void(0)">查看历史记录</a>
+                    <a class="ytg mR20" href="javascript:void(0)">更新</a>
+                    <a class="ytg mR20" href="javascript:void(0)">新增</a>
+                </div>
+                <div class="body" id="t1_6" style="display: none">
+                6
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+    
+<!-- footer -->
+<div class="footer">
+    <div class="sa">
+        <p>网站标示类信息</p>
+    </div>
+</div>
+
+<script type="text/javascript">
+// #side-menu# can be changed to be a global function
+$("#menu-switch").toggle(
+    // close the whole menu
+    function(){
+        $("#menu-switch").removeClass("switch-on");
+        $(".menu-on").animate({height:"0"},1000,function(){
+            $(".menu-off").show(500,function(){
+                $("#menu-switch").addClass("switch-off");
+            });
+        });
+    },
+    // open the whole menu
+    function(){
+        $(".menu-off").hide();
+        $(".menu-on").animate({height:"644px"},1000);
+        $("#menu-switch").removeClass("switch-off");
+        $("#menu-switch").addClass("switch-on");
+    }
+);
+
+// for files tab
+$(function(){
+	$('.taber .head a').hover(function(){
+		var _num = $(this).attr('lang').substring(0,2);
+		$("#"+_num+" .body").hide();
+		$('.taber #'+$(this).attr('lang')).show();
+
+		$("#"+_num+" .head a").removeClass('selected');
+		$(this).addClass('selected');
+	})
+});
+</script>
+
+</body>
+
+</html>

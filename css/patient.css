@@ -394,6 +394,8 @@
 .d-chart {
     padding: 20px;
     text-align: center;
+    border: 1px solid #ccc;
+    border-top: none;
 }
 
 /********** medecine **********/
@@ -453,6 +455,10 @@
     font-size: 24px;
     padding: 21px 20px;
     text-align: center;
+    cursor: pointer;
+}
+.talk-all:hover {
+    background: #fd9712;
 }
 .talk-all .badge {
     padding: 3px 15px;
@@ -465,6 +471,10 @@
     font-size: 24px;
     padding: 21px 20px;
     text-align: center;
+    cursor: pointer;
+}
+.talk-unread:hover {
+    background: #482402;
 }
 .talk-unread .badge {
     padding: 3px 15px;
@@ -473,7 +483,8 @@
 }
 .p-tbox-blk {
     width: 100%;
-    padding: 15px 15px 5px;
+/*    padding: 15px 15px 5px;*/
+    padding: 13px 15px 5px;
     background: #e6e6e6;
     position: relative;
     border-bottom: 1px solid #eee;
@@ -528,10 +539,12 @@
 .reply-box {
     background: #99cccd;
     height: 135px;
+    padding-left: 135px;
 }
-.reply-box textarea {
+.reply-box textarea, .reply-box2 textarea  {
     float: right;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    width: 100%;
 }
 .reply-box a.qa-btn {
     display: block;
@@ -546,13 +559,75 @@
     text-decoration: none;
     border-radius: 7px;
 }
-.reply-box a.qa-btn:hover {
+.reply-box a.qa-btn:hover, .reply-box2 a.qa-btn:hover {
     background: #436464;
     text-decoration: none;
 }
 
-
-
-
+/********** health file **********/
+.file-box {
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 954px;
+}
+.tab-forder {
+    width: 119px;
+    height: 119px;
+    display: table;
+    vertical-align: middle;
+    background: #e6e6e6;
+    color: #000;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+}
+.tab-forder .tab-box {
+    width: 119px;
+    height: 119px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.tab-forder:hover, .tab-forder.selected {
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+}
+.nf-head {
+    float: none;
+}
+.tab-secondary {
+    width: 139px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    background: #336799;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    border-right: 1px solid #88add9;
+}
+.tab-secondary:hover, .tab-secondary.selected {
+    width: 138px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+.data-box {
+    margin: 50px 0 0 20px;
+    list-style: none;
+}
+.data-box li {
+    margin-bottom: 20px;
+}
+.data-box lable.data-item {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 20px;
+}
 
 
