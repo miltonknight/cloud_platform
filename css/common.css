@@ -307,7 +307,7 @@ a.pic-user .pic-user-info {
 }
 .paging li {
     display: inline;
-    padding: 5px 10px;
+    padding: 5px 20px;
     background: #b3b3b3;
     color: #fff;
     line-height: 53px;
@@ -319,6 +319,7 @@ a.pic-user .pic-user-info {
 }
 .paging li.org {
     background: #fc6700;
+    padding: 5px 10px;
 }
 
 
