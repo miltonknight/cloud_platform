@@ -246,27 +246,7 @@ div.moduletable-banner{
     margin-left: -15px;
     text-indent: 10px;
 }
-#login-box {
-    padding: 20px;
-    position: absolute;
-    z-index: 111;
-    left: 50%;
-    top: 50px;
-    margin-left: 256px;
-    background: #fff;
-    display: none;
-}
-#login-box div {
-    padding: 10px 0;   
-}
-#login-box lable {
-    display: inline-block;
-    width: 80px;
-}
-#login-box input {
-    width: 200px;
-    float: right;
-}
+
 
 
 

@@ -15,7 +15,9 @@
     <link href="css/layout.css" rel="stylesheet" type="text/css">
     <link href="css/common.css" rel="stylesheet" type="text/css">
     <link href="css/patient.css" rel="stylesheet" type="text/css">
+    <link href="css/packages/art-default.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/packages/jquery.artDialog.min.js"></script>
 </head>
 
 <body>
@@ -89,7 +91,9 @@
             </div>
             <!-- yuyuejiuzhen -->
             <div class="blk-basic p-yuema">
-                <a href="#"><span>预 约就 诊</span></a>
+				<a class="runCode" href="#api-lock-demo"><span>预 约就 诊</span></a>
+                <!-- <a href="#"><span>预 约就 诊</span></a> -->
+<!--                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">小模态框</button>-->
             </div>
             <!-- yishengjianyi -->
             <div class="blk-basic p-cm d-advice">
@@ -201,8 +205,29 @@ $("#menu-switch").toggle(
         $("#menu-switch").addClass("switch-on");
     }
 );
-</script>
 
+
+// artDialog for appointment
+$(".runCode").click(function(){
+	var dialog = $.dialog({
+		title: '预约就诊',
+		content: '<textarea row="5" cols="50">46</textarea>',
+		button: [
+			{
+				value: '提交',
+				callback: function () {
+					alert('提交方法写在此处')
+				}
+			},
+			{
+				value: '取消'
+			}
+		]
+	});
+	dialog.lock();
+});
+
+</script>
 </body>
 
 </html>

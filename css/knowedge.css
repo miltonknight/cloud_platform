@@ -1,0 +1,163 @@
+@charset utf-8;
+/*! Copyright (c) 2015 Health 
+ *	Theme Name: Health 2015 
+ *	Theme URI: 
+ *	Description: healty cloud platform knowedge
+ *	Author: M.Knight
+ *	Version: 1.0
+ *	Tags: health, knowedge
+ *	Update by M.Knight 20150505
+ */
+
+/********** knowedge index **********/
+.latest {
+    padding: 15px 20px;
+    background: #2e85c8;
+    color: #fff;
+}
+.hotest {
+    padding: 15px 20px;
+    background: #ffcc00;
+}
+.latest ul, .hotest ul {
+    margin-top: 20px;
+    padding: 0;
+    font-size: 16px;
+    list-style: none;
+}
+.latest li, .hotest li {
+    width: 200px;
+    height: 25px;
+    margin-bottom: 4px;
+    background: url(../images/dot.gif) no-repeat 0 9px;
+    text-indent: 10px;
+    overflow: hidden;
+}
+.hotest li {
+    background: url(../images/dot-q.gif) no-repeat 0 9px;
+}
+.latest li a, .latest li a:hover {
+    color: #fff;
+}
+.hotest li a, .hotest li a:hover {
+    color: #333;
+}
+.bd-box {
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background: #fff;
+    width: 954px;
+}
+.bd-box ul, .bd-box li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.bd-box li {
+    clear: both;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.bd-box li:nth-child(2n) {
+    background: #d9f4ff;
+}
+dl.item-list {
+    padding: 30px;
+    clear: both;
+    overflow: hidden;
+    height: 90px;
+}
+dl.item-list dd {
+    width: 50%;
+    height: 25px;
+    margin-bottom: 8px;
+    background: url(../images/dot-t.gif) no-repeat 20px 9px;
+    text-indent: 30px;
+    overflow: hidden;
+    float: left;
+    font-size: 16px;
+}
+dl.item-list dd a, dl.item-list dd a:hover {
+    color: #333;
+    text-decoration: none;
+}
+.item-row-box {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.item-row-box .item-row:nth-child(2n) {
+    background: #e6e6e6;
+}
+.item-row {
+    width: 714px;
+    height: 119px;
+    clear: both;
+    overflow: hidden;
+}
+.item-row dl {
+    padding: 15px 20px;
+    font-size: 14px;
+    overflow: hidden;
+    height: 108px;
+}
+.item-row dl dt {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.item-row dl a, .item-row dl a:hover {
+    color: #333;   
+}
+.his-back {
+    background-image: url(../images/back-arr.png);
+    background-position: center center;
+    background-color: #b3b3b3;
+    background-repeat: no-repeat;
+}
+.his-back:hover {
+    background-color: #9b9a9a;
+}
+.bread {
+    width: 44px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 152px;
+    margin-left: -569px;
+}
+.bread li {
+    display: block;
+    padding: 15px 10px;
+    width: 44px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.bread li a, .bread li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.bread li:nth-child(n+1) {
+    background: #3071e7;
+}
+.bread li:nth-child(n+2) {
+    background: #623434;
+}
+
+/********** for slider **********/
+.flex-control-nav { 
+    display: block;  
+    top: 10px;
+    right: 5px;
+    text-align: right;
+}
+.flex-control-nav li {
+    text-align: left;
+}
+.flexslider .slides {
+    padding: 0;
+}
+.flexslider .slides img {
+    height: 238px;
+}
+

@@ -14,6 +14,19 @@
     display: block;
 }
 
+.flexslider .slides span {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #fff;
+    background: rgba(0,0,0,.7);
+    position: relative;
+    z-index: 1;
+    margin-top: -30px;
+    padding: 0 10px;
+}
+
 .slides:after {
     content: ".";
     display: block;

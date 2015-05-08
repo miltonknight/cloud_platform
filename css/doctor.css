@@ -54,6 +54,8 @@
 }
 .box-more img {
     margin-bottom: 10px;
+    width: 62px;
+    height: 56px;
 }
 .purple {
     background: #254ec4;
@@ -345,7 +347,7 @@ ul.apt-box li:nth-child(3n+3) {
     overflow: hidden;
 }
 .blk-apmt {
-    width: 238px;
+    width: 178px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -355,14 +357,22 @@ ul.apt-box li:nth-child(3n+3) {
 .tit-A {
     background: #b3b3b3;
     color: #fff;
+    width: 25%;
 }
 .tit-B {
     background: #808080;
     color: #fff;
+    width: 25%;
 }
 .tit-C {
     background: #4d4d4d;
     color: #fff;
+    width: 25%;
+}
+.tit-D {
+    background: #222222;
+    color: #fff;
+    width: 25%;
 }
 .ampt-sheet ul.sheet-list, .ampt-sheet ul.sheet-list li {
     margin: 0;
@@ -381,16 +391,17 @@ ul.apt-box li:nth-child(3n+3) {
 }
 .row-tleft {
     text-align: left;
+    width: 180px;
 }
 .ampt-sheet input[type="checkbox"] {
-    margin-left: 70px;
+    margin-left: 40px;
     margin-right: 10px;
 }
 .ampt-sheet a.opt, 
 .ampt-sheet a.opt-cnc, 
 .ampt-sheet a.unopt {
     display: block;
-    width: 119px;
+    width: 50%;
     height: 50px;
     color: #fff;
     font-size: 16px;
