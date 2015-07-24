@@ -353,6 +353,15 @@ ul.apt-box li:nth-child(3n+3) {
     text-align: center;
     float: left;
     font-size: 18px;
+    overflow: hidden;
+}
+.blk-apmt-three {
+    width: 238px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    font-size: 16px;
 }
 .tit-A {
     background: #b3b3b3;
@@ -374,7 +383,21 @@ ul.apt-box li:nth-child(3n+3) {
     color: #fff;
     width: 25%;
 }
-.ampt-sheet ul.sheet-list, .ampt-sheet ul.sheet-list li {
+.tit-E {
+    background: #b3b3b3;
+    color: #fff;
+}
+.tit-F {
+    background: #808080;
+    color: #fff;
+}
+.tit-G {
+    background: #4d4d4d;
+    color: #fff;
+}
+.ampt-sheet ul.sheet-list, 
+.ampt-sheet ul.sheet-list li, 
+.ampt-sheet ul.patients-list li {
     margin: 0;
     padding: 0;
     float: left;
@@ -389,6 +412,23 @@ ul.apt-box li:nth-child(3n+3) {
 .ampt-sheet ul.sheet-list li:nth-child(3n+3) {
     background: #cccccc;
 }
+ul.patients-list, ul.patients-list a {
+    padding: 0;
+    color: #fff;
+}
+.ampt-sheet ul.patients-list li:nth-child(4n+1) {
+    background: #955937;
+}
+.ampt-sheet ul.patients-list li:nth-child(4n+2) {
+    background: #ffcc00;
+}
+.ampt-sheet ul.patients-list li:nth-child(4n+3) {
+    background: #019934;
+}
+.ampt-sheet ul.patients-list li:nth-child(4n) {
+    background: #34908f;
+}
+
 .row-tleft {
     text-align: left;
     width: 180px;
@@ -528,25 +568,7 @@ a.unopt:hover {
     top: 0;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.p-head {
+	width:119px;
+	height:119px;
+}

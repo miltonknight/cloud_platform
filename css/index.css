@@ -48,7 +48,7 @@
     z-index: 1;
     width: 952px;
     color: #fff;
-    height: 476px;
+    min-height: 426px;
     margin-bottom: 100px;
 }
 .i-latest {
@@ -191,6 +191,7 @@ a.more-lecture:hover {
     overflow: hidden;
     position: relative;
     background: url(../images/video-default.png) #e6e6e6 center center no-repeat;
+    cursor: pointer;
 }
 .video-box img {
     width: 238px;

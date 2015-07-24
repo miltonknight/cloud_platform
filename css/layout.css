@@ -13,20 +13,20 @@
 .sa {width: 952px; margin: 0 auto; clear: both; overflow: hidden;}
 
 /* sa_02_01 714-238 */
-.sa-two-one {width: 952px; margin: 0 auto 20px; clear: both; overflow: hidden;}
+.sa-two-one {width: 952px; margin: 0 auto 20px; clear: both; overflow: hidden; background: #fff;}
 .sa-two-one .sa-left {width: 714px; float: left;}
 .sa-two-one .sa-right {width: 238px; float: left;}
 
-/* sa_02_02 119-833 */
+/* sa_02_02 - */
 .sa-two-two {width: 952px; margin: 0 auto 20px; clear: both; overflow: hidden;}
 .sa-two-two .sa-left {width: 119px; float: left;}
 .sa-two-two .sa-right {width: 833px; float: left;}
 
-/* sa_03_01 205_490_245 */
-.sa-three-one {width: 952px; margin: 0 auto 20px; clear: both; overflow: hidden;}
-.sa-three-one .sa_left {width: 205px; float: left; margin-right: 20px;}
-.sa-three-one .sa_mid {width: 490px; float: left; margin-right: 20px;}
-.sa-three-one .sa_right {width: 245px; float: left;}
+/* sa_03_01 238-476-238 */
+.sa-three-one {width: 952px; margin: 0 auto 20px; clear: both; overflow: hidden; background: #fff;}
+.sa-three-one .sa-left {width: 238px; float: left;}
+.sa-three-one .sa-mid {width: 476px; float: left;}
+.sa-three-one .sa-right {width: 238px; float: left;}
 
 .wrapper {
     width: 952px;

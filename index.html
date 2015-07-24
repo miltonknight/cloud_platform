@@ -211,47 +211,47 @@ $(function(){
 		$(".more-lecture").removeClass("on");
 		$(this).addClass("on");
 		
-		$(".cmt-video").stop(true).animate({width:"714px"},1000);
+		$(".cmt-video").stop(true).animate({width:"714px"},800);
 		
 	}, function(){
 		$(".more-lecture").removeClass("on");
 		if(listLock == 0){
 			time = setTimeout(function(){
-				$(".cmt-video").stop(true).animate({width:"0"},1000);
-			}, 1000);	
+				$(".cmt-video").stop(true).animate({width:"0"},800);
+			}, 500);	
 		}
 	});
 
 	$(".cmt-video").hover(function(){
 		clearTimeout(time);
-		$(".cmt-video").stop(true).animate({width:"714px"},1000);
+		$(".cmt-video").stop(true).animate({width:"714px"},800);
 	}, function(){
 		if(listLock == 0){
 			time = setTimeout(function(){
-				$(".cmt-video").stop(true).animate({width:"0"},1000);	
-			}, 1000);	
+				$(".cmt-video").stop(true).animate({width:"0"},800);	
+			}, 500);	
 		}
 	});
     
     // login
 	$("#_login").hover(function(){
 		clearTimeout(_time);
-		$("#login-box").stop(true).animate({height:"195px",padding:"20px"},1000);
+		$("#login-box").stop(true).animate({height:"205px",padding:"20px"},800);
 	}, function(){
 		if(listLock == 0){
 			_time = setTimeout(function(){
-				$("#login-box").stop(true).animate({height:"0",padding:"0"},1000);
+				$("#login-box").stop(true).animate({height:"0",padding:"0"},800);
 			}, 100);	
 		}
 	});
 
 	$("#login-box").hover(function(){
 		clearTimeout(_time);
-		$("#login-box").animate({height:"195px",padding:"20px"},1000);
+		$("#login-box").animate({height:"205px",padding:"20px"},800);
 	}, function(){
 		if(_listLock == 0){
 			_time = setTimeout(function(){
-				$("#login-box").stop(true).animate({height:"0",padding:"0"},1000);	
+				$("#login-box").stop(true).animate({height:"0",padding:"0"},800);	
 			}, 100);	
 		}
 	});

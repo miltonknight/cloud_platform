@@ -159,5 +159,6 @@ dl.item-list dd a, dl.item-list dd a:hover {
 }
 .flexslider .slides img {
     height: 238px;
+    width: 100%;
 }
 

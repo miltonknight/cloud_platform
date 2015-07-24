@@ -16,7 +16,9 @@
     <link href="css/common.css" rel="stylesheet" type="text/css">
     <link href="css/patient.css" rel="stylesheet" type="text/css">
     <link href="css/doctor.css" rel="stylesheet" type="text/css">
+    <link href="css/packages/art-default.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/packages/jquery.artDialog.min.js"></script>
 </head>
 
 <body>
@@ -89,7 +91,7 @@
                         <div class="body" id="t1_1" style="display: block;">
                             <div class="plan-cont">水能载舟亦能覆舟，饮食也是如此。科学膳食有益官兵身心健康，是战斗力的基础和催化剂。少食、偏食、暴饮暴食等不科学的膳食有损官兵健康，战时甚至会造成非战斗减员。合理营养是健康的物质基础，而平衡膳食是合理营养的根本途径。所谓平衡膳食，是指膳食中的食物种类齐全、数量适当、营养素比例合理。要实现科学膳食，应注重抓好“四个平衡”。</div>
                             <div class="plan-btn">
-                                <a href="javascript:void(0)">新增</a><a href="javascript:void(0)">取消</a>
+                                <a class="runCode" href="javascript:void(0)">新增</a><a href="javascript:void(0)">取消</a>
                             </div>
                         </div>
                         
@@ -146,6 +148,21 @@
     </div>
 </div>
 
+<!--
+<div class="taber" id="t1">
+    <div class="head">
+        <a class="selected" href="javascript:void(0)">11</a>
+        <a href="javascript:void(0)">22</a>
+        <a href="javascript:void(0)">33</a>
+        <a href="javascript:void(0)">44</a>
+    </div>
+    <div class="body" id="t1_1" style="display:block;"><textarea>1</textarea></div>
+    <div class="body" id="t1_2" style="display:none;"><textarea>2</textarea></div>
+    <div class="body" id="t1_3" style="display:none;"><textarea>3</textarea></div>
+    <div class="body" id="t1_4" style="display:none;"><textarea>4</textarea></div>
+</div>
+-->
+
 <script type="text/javascript">
 // #side-menu# can be changed to be a global function
 $("#menu-switch").toggle(
@@ -177,6 +194,29 @@ $(function(){
 		$("#"+_num+" .head a").removeClass('selected');
 		$(this).addClass('selected');
 	})
+});
+    
+// artDialog for appointment
+var _str = '<div class=\"taber\" id=\"t2\"><div class=\"head\"><a href=\"javascript:void(0)\"  class=\"selected\">11</a><a href=\"javascript:void(0)\">22</a><a href=\"javascript:void(0)\">33</a><a href=\"javascript:void(0)\">44</a></div><div class=\"body\" id=\"t2_1\"  style=\"display:block;\"><textarea>1</textarea></div><div class=\"body\" id=\"t2_2\" style=\"display:none;\"><textarea>2</textarea></div><div class=\"body\" id=\"t2_3\" style=\"display:none;\"><textarea>3</textarea></div><div class=\"body\" id=\"t2_4\" style=\"display:none;\"><textarea>4</textarea></div></div>';
+$(".runCode").click(function(){
+	var dialog = $.dialog({
+        width: 400,
+        height: 300,
+		title: '预约就诊',
+		content: _str,
+		button: [
+			{
+				value: '确定',
+				callback: function () {
+					alert('提交方法写在此处')
+				}
+			},
+			{
+				value: '取消'
+			}
+		]
+	});
+	dialog.lock();
 });
 </script>
 

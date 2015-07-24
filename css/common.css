@@ -67,6 +67,7 @@ body {
 }
 .p20 {padding: 20px;}
 .ph20 {padding: 0 20px;}
+.mt10 {margin-top: 10px;}
 
 /********** nav **********/
 .nav-bar { 
@@ -118,7 +119,6 @@ body {
     background: #428bca;
 }
 #login-box {
-    
     position: absolute;
     z-index: 111;
     left: 50%;
@@ -133,7 +133,7 @@ body {
     border: 1px solid #ccc;
     height: 32px;
     padding-left: 32px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .login-box-username input, .login-box-pwd input {
     float: right;
@@ -389,6 +389,54 @@ a.pic-half span {
     z-index: 1;
 }
 
+/* pnt public */
+a.pnt-basic {
+    display: block;
+    width: 238px;
+    height: 238px;
+    text-decoration: none;
+    position: relative;
+}
+a.pnt-basic:hover {
+    text-decoration: none;
+}
+a.pnt-basic span {
+    display: block;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    font-size: 16px;
+}
+/* video */
+a.pnt-half {
+    width: 238px;
+    height: 119px;
+}
+a.pnt-half img {
+    width: 238px;
+    height: 119px;
+}
+a.pnt-half span {
+    font-size: 14px;
+}
+a.pnt-ext2 {
+    width: 476px;
+    height: 238px;
+}
+a.pnt-ext2 img {
+    width: 476px;
+    height: 238px;
+}
+a.pnt-ext2 span {
+    font-size: 14px;
+}
 /********** paging **********/
 .paging {
     width: 100%;
@@ -396,6 +444,9 @@ a.pic-half span {
     overflow: hidden;
     margin: 0 auto;
     text-align: center;
+}
+.paging ul {
+    padding: 0;
 }
 .paging li {
     display: inline;
@@ -459,6 +510,7 @@ a.pic-half span {
 }
 .article .title {
     padding: 20px 0 10px;
+    margin-bottom: 30px;
     border-top: 1px solid #4a4a4a;
     border-bottom: 1px solid #4a4a4a;
 }
